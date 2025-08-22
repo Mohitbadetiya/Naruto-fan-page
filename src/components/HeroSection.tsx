@@ -30,7 +30,7 @@ const HeroSection = () => {
               Explore Characters
             </Button>
             <Button variant="secondary" size="lg" className="text-lg px-8 py-6">
-              Watch Episodes
+              Naruto Game
             </Button>
           </div>
         </div>
