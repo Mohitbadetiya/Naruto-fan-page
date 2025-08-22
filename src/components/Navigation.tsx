@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto px-4 py-4">
@@ -15,18 +21,30 @@ const Navigation = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#characters" className="text-foreground hover:text-primary transition-colors">
+            <button 
+              onClick={() => scrollToSection('characters')} 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+            >
               Characters
-            </a>
-            <a href="#villages" className="text-foreground hover:text-primary transition-colors">
+            </button>
+            <button 
+              onClick={() => scrollToSection('villages')} 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+            >
               Villages
-            </a>
-            <a href="#jutsu" className="text-foreground hover:text-primary transition-colors">
+            </button>
+            <button 
+              onClick={() => scrollToSection('jutsu')} 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+            >
               Jutsu
-            </a>
-            <a href="#episodes" className="text-foreground hover:text-primary transition-colors">
-              Episodes
-            </a>
+            </button>
+            <button 
+              onClick={() => scrollToSection('game')} 
+              className="text-foreground hover:text-primary transition-colors cursor-pointer"
+            >
+              Game
+            </button>
           </div>
           
           <Button variant="outline" size="sm">

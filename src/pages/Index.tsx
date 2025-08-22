@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import CharactersSection from "@/components/CharactersSection";
 import VillageSection from "@/components/VillageSection";
+import NarutoGame from "@/components/NarutoGame";
 
 const Index = () => {
   return (
@@ -13,6 +14,9 @@ const Index = () => {
       </div>
       <div id="villages">
         <VillageSection />
+      </div>
+      <div id="game">
+        <NarutoGame />
       </div>
     </div>
   );
