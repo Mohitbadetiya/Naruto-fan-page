@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Naruto theme colors
+				'naruto-orange': 'hsl(var(--naruto-orange))',
+				'naruto-blue': 'hsl(var(--naruto-blue))',
+				'leaf-green': 'hsl(var(--leaf-green))',
+				'shadow-purple': 'hsl(var(--shadow-purple))',
+				gold: 'hsl(var(--gold))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
